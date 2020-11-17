@@ -9,13 +9,14 @@ package javacode;
  *
  * @author DaffodilPC
  */
-public class JavaCode {
+public class EscapeSequence {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.print("My Name is Emon ");
+        System.out.print("BSc in CSE\nHis name is Emon");
+        
     }
     
 }
