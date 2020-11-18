@@ -13,8 +13,12 @@ public class DataType {
         double d;
         
         b = true;
+        i = 10;
+        f = 2.3f;
         
-        System.out.println("b = "+b);
+        System.out.printf("b = %b\n",b);
+        System.out.printf("i = %d\n",i);
+        System.out.printf("f = %.2f\n",f);
         
     }
     
