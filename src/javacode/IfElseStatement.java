@@ -9,17 +9,17 @@ public class IfElseStatement {
     
     public static void main(String[] args) {
         
-        int num;
+        char ch;
         
-        System.out.print("Enter a number: ");
+        System.out.print("Enter a Character: ");
         Scanner input = new Scanner(System.in);
         
-        num = input.nextInt();
+        ch = input.next().charAt(0);
         
-        if(num%2 == 0){
-            System.out.println("Even");
+        if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            System.out.println("Vowel");
         }else{
-            System.out.println("Odd");
+            System.out.println("Consonant");
         }
         
     }
