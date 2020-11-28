@@ -10,29 +10,31 @@ public class TimeTableDemo {
     public static void main(String[] args) {
             
             Scanner input = new Scanner(System.in);
-            int m,n;
-           
-            System.out.print("Enter initial number: ");
+            int m;
+            System.out.print("Enter Any Positive Integer: ");
             m = input.nextInt();
+            int count = 0;
             
-            System.out.print("Enter final number: ");
-            n = input.nextInt();
             
   
             
             
-            for (int i = m; i <= n; i++) {
+            for (int i = 2; i < m; i++) {
                 
-                for(int j = 1; j <= 10; j++){
-                    System.out.println(i+" x "+j+ " = "+ i*j);
+                if(m % i == 0){
+                    
+                    count++;
+                    break;
+                    
                 }
-                System.out.println();
-                
-              
- 
-                   
                 
                 
+            }
+            
+            if(count == 0){
+                System.out.println("Prime Number");
+            }else{
+                System.out.println("Not a Prime Number");
             }
             
         
