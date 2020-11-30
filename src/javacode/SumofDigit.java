@@ -21,13 +21,17 @@ public class SumofDigit {
             while(temp!= 0){
                 
                 r = temp % 10;
-                sum = sum + r;
+                sum = sum * 10 + r;
                 temp = temp/10;
                 
                 
             }
+            if(num == sum){
+                System.out.println("Palindrome");
+            }else{
+                System.out.println("Not Palindrome");
+            }
             
-            System.out.println("Sum of Digit is: "+sum);
             
             
             
