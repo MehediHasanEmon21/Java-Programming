@@ -11,13 +11,24 @@ public class Pattern1 {
             
             Scanner input = new Scanner(System.in);
             
-            int n;
+            int n,row,col;
             System.out.print("Enter How Many row: ");
             n = input.nextInt();
             
-            for(int row = n; row>=1; row--){
+            for(row = 1; row<=n; row++){
                 
-                for(int col = 1; col<=row; col++){
+                for(col = 1; col<=row; col++){
+                    
+                    System.out.print(" "+col);
+                    
+                }
+                System.out.println("");
+                
+            }
+            
+            for(row = n-1; row>=1; row--){
+                
+                for(col = 1; col<=row; col++){
                     
                     System.out.print(" "+col);
                     
