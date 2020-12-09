@@ -19,7 +19,7 @@ public class Pattern1 {
                 
                 for(int col = 1; col<=row; col++){
                     
-                    System.out.print(" "+row%2);
+                    System.out.print(" "+(char)(col+64));
                     
                 }
                 System.out.println("");
