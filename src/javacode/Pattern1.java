@@ -15,7 +15,23 @@ public class Pattern1 {
             System.out.print("Enter How Many row: ");
             n = input.nextInt();
             
-            for(row = n; row>=1; row--){
+            for(row = 1; row <= n; row++){
+                
+                for(col = 1; col<= n-row; col++){
+                    
+                    System.out.print(" ");
+                    
+                }
+                for(col = 1; col<= row; col++){
+                    
+                    System.out.print(col);
+                    
+                }
+                System.out.println("");
+                
+            }
+            
+            for(row = n-1; row >= 1; row--){
                 
                 for(col = 1; col<= n-row; col++){
                     
