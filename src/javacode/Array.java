@@ -8,17 +8,20 @@ public class Array {
 
     
     public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        double[] number = new double[5];
+        System.out.print("Please Enter 5 number: ");
+        int i;
+        double sum = 0;
+        
+        for (i = 0; i < number.length; i++) {
             
-        int[] number = new int[10];
+            number[i] = input.nextDouble();
+            
+        }
         
-        number[0] = 10;
-        number[1] = 10;
-        number[2] = 10;
-        number[3] = 10;
-        number[4] = 10;
-        int sum = 0;
-        
-        for(int i = 0; i < number.length; i++){
+        for(i = 0; i < number.length; i++){
             sum = sum + number[i];
         }
         
